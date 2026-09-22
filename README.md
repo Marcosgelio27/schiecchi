@@ -2,7 +2,7 @@
 
 Site estático de `schiecchi.com.br`.
 
-Para alterar o site, abra esta pasta no Codex e descreva a mudança nesta tarefa. O Codex pode editar os arquivos, registrar um commit e enviar a alteração ao repositório GitHub. Quando o GitHub Pages estiver ativado, cada envio para a branch `main` atualizará o site.
+Para alterar o site, abra esta pasta no Codex e descreva a mudança. Antes de editar, o Codex deve consultar as instruções em `AGENTS.md` e atualizar o projeto a partir do GitHub, preservando qualquer trabalho local. Depois, edita os arquivos, registra um commit e envia a alteração. Cada envio para a branch `main` atualiza automaticamente o site pelo GitHub Pages.
 
 ## Publicação
 
