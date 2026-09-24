@@ -39,7 +39,12 @@ em{font-style:normal;color:var(--teal)}
 .about-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:30px;align-items:center}
 .about-copy h2{margin:0 0 12px;padding-left:34px;font-size:clamp(1.2rem,1.85vw,2rem);line-height:1.08;letter-spacing:-.02em}
 .about-copy>p:not(.section-kicker){margin:0 0 10px;padding-left:34px;max-width:620px;color:#e5edee;font-family:Arial,sans-serif;font-size:.9rem;line-height:1.5}
-.about-copy>p:last-child{margin-bottom:0}.about-emphasis{font-weight:700}
+.about-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 12px;margin:19px 0 18px;padding:0 0 0 34px;list-style:none}
+.about-actions li{position:relative;display:flex;flex-direction:column;gap:3px;min-width:0;padding:9px 0 0 9px;border-top:1px solid #27636a}
+.about-actions li:before{content:"";position:absolute;top:-2px;left:0;width:4px;height:4px;border-radius:50%;background:var(--teal)}
+.about-actions span{color:var(--teal);font-size:.61rem;font-weight:700;letter-spacing:.14em}
+.about-actions strong{color:#f5fcfd;font-size:.73rem;letter-spacing:.035em;line-height:1.2}
+.about-copy>p.about-signature{margin:0 0 0 34px;padding:7px 0 7px 12px;border-left:3px solid var(--teal);font-family:Bahnschrift,"Arial Narrow",Arial,sans-serif;font-size:.85rem;font-weight:800;letter-spacing:.09em;line-height:1.25}
 .pillars{display:grid;grid-template-columns:repeat(4,1fr);align-items:stretch}
 .pillar{min-height:140px;padding:7px 10px 0;border-left:1px solid #20404a;text-align:center}
 .pillar svg{width:40px;height:40px;margin-bottom:8px;stroke:var(--teal);fill:none;stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round}
@@ -116,7 +121,7 @@ dialog>p:not(.section-kicker){color:#c6d9d9;line-height:1.5}
   .site-nav{display:none;position:absolute;top:75px;left:0;right:0;padding:15px 26px 22px;background:#06151deF;border-bottom:1px solid #2c6d6f;flex-direction:column;align-items:stretch;gap:0}
   .site-nav.open{display:flex}.site-nav a{padding:10px 0;font-size:.8rem}
   .hero{height:540px;background-size:cover;background-position:center}.hero h1{font-size:clamp(3.3rem,7vw,4.5rem)}.hero-eyebrow{white-space:normal;max-width:450px;line-height:1.5}
-  .about-grid{grid-template-columns:1fr}.about-copy h2,.about-copy>p:not(.section-kicker){padding-left:0}.pillars{margin-top:12px}
+  .about-grid{grid-template-columns:1fr}.about-copy h2,.about-copy>p:not(.section-kicker){padding-left:0}.about-actions{padding-left:0}.about-copy>p.about-signature{margin-left:0;padding-left:12px}.pillars{margin-top:12px}
   .technology-grid{grid-template-columns:repeat(2,1fr);gap:12px}.technology-card{min-height:300px}.technology-card:last-child{grid-column:1/-1;min-height:280px;background-position:center 58%}.technology-card h3{font-size:clamp(1.8rem,3vw,2.3rem)}.technology-card p{font-size:.82rem}.technology-card a{min-width:0;gap:10px;padding-inline:12px}
   .cases-grid{grid-template-columns:1fr 1fr}.cases-copy{grid-column:1/-1;padding:0 0 22px}.cases-copy h2,.cases-copy>p:last-child{margin-left:0}
 }
@@ -126,7 +131,7 @@ dialog>p:not(.section-kicker){color:#c6d9d9;line-height:1.5}
   .hero{height:640px;background-position:61% center}
   .hero-content{justify-content:flex-end;padding-top:90px;padding-bottom:68px}.hero-eyebrow{margin-bottom:17px;font-size:.6rem;letter-spacing:.08em}
   .hero h1{font-size:clamp(2.65rem,11vw,4.2rem)}.hero-copy{font-size:1.35rem}.hero .solid-button{width:100%}
-  .about-band{padding:30px 0}.about-copy h2{font-size:1.55rem}.about-copy>p:not(.section-kicker){font-size:.85rem}
+  .about-band{padding:30px 0}.about-copy h2{font-size:1.55rem}.about-copy>p:not(.section-kicker){font-size:.85rem}.about-actions{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.about-copy>p.about-signature{font-size:.85rem}
   .pillars{grid-template-columns:repeat(2,1fr);gap:15px}.pillar{border:1px solid #234b54;min-height:145px;padding:14px}
   .technologies{padding:33px 0}.technologies h2{margin-left:0;font-size:1.45rem}.technology-grid{grid-template-columns:1fr;gap:15px}.technology-card,.technology-card:last-child{grid-column:auto;min-height:365px}.technology-card h3{font-size:2.7rem}.technology-card p{font-size:.92rem}.technology-card a{width:auto;min-width:200px;font-size:.7rem}
   .contact-grid{grid-template-columns:1fr;gap:24px}.contact-grid>div:first-child{padding-left:0}.contact-section h2{font-size:2rem}.contact-section>div>div>p:last-child{font-size:.87rem}.contact-form input{height:46px}.contact-form .solid-button{height:48px}
