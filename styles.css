@@ -8,12 +8,12 @@ img{max-width:100%}
 em{font-style:normal;color:var(--teal)}
 .shell{width:min(100% - 74px,1450px);margin-inline:auto}
 .skip-link{position:absolute;top:-60px;left:12px;z-index:30;padding:11px;background:#fff;color:#06131b}.skip-link:focus{top:10px}
-.site-header{position:absolute;top:0;left:0;right:0;z-index:10;height:86px;background:#000}
+.site-header{position:absolute;top:0;left:0;right:0;z-index:10;height:100px;background:#000}
 .site-header:after{content:"";position:absolute;top:100%;left:0;right:0;height:22px;background:linear-gradient(#000b,transparent);pointer-events:none}
 .header-inner{height:100%;display:flex;align-items:center;justify-content:flex-start;gap:0}
-.brand{display:block;flex:none;width:165px;background:#000;transform:translateY(7px)}
+.brand{display:block;flex:none;width:223px;background:#000;transform:translateY(7px)}
 .brand img{display:block;width:100%;height:auto}
-.site-nav{display:flex;align-items:center;gap:35px;margin-left:93px;margin-right:auto}
+.site-nav{display:flex;align-items:center;gap:35px;margin-left:35px;margin-right:auto}
 .site-nav a{position:relative;padding:10px 0;color:#fff;font-size:.79rem;font-weight:800;text-transform:uppercase;white-space:nowrap}
 .site-nav a:hover,.site-nav a:focus-visible,.site-nav a.active{color:#6cefd2}
 .site-nav a.active:after{content:"";position:absolute;left:0;right:0;bottom:1px;height:2px;background:#32dfb7}
@@ -38,7 +38,8 @@ em{font-style:normal;color:var(--teal)}
 .about-band:before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,transparent,#24e2bc,transparent)}
 .about-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:30px;align-items:center}
 .about-copy h2{margin:0 0 12px;padding-left:34px;font-size:clamp(1.2rem,1.85vw,2rem);line-height:1.08;letter-spacing:-.02em}
-.about-copy>p:last-child{margin:0;padding-left:34px;max-width:620px;color:#e5edee;font-family:Arial,sans-serif;font-size:.9rem;line-height:1.5}
+.about-copy>p:not(.section-kicker){margin:0 0 10px;padding-left:34px;max-width:620px;color:#e5edee;font-family:Arial,sans-serif;font-size:.9rem;line-height:1.5}
+.about-copy>p:last-child{margin-bottom:0}.about-emphasis{font-weight:700}
 .pillars{display:grid;grid-template-columns:repeat(4,1fr);align-items:stretch}
 .pillar{min-height:140px;padding:7px 10px 0;border-left:1px solid #20404a;text-align:center}
 .pillar svg{width:40px;height:40px;margin-bottom:8px;stroke:var(--teal);fill:none;stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round}
@@ -104,18 +105,18 @@ dialog>p:not(.section-kicker){color:#c6d9d9;line-height:1.5}
 
 @media(max-width:1120px){
   .shell{width:min(100% - 55px,1450px)}
-  .site-nav{gap:33px;margin-left:93px}.site-nav a{font-size:.69rem}.brand{width:165px}.header-cta{font-size:.66rem;padding-inline:16px}
+  .site-nav{gap:33px;margin-left:35px}.site-nav a{font-size:.69rem}.brand{width:223px}.header-cta{font-size:.66rem;padding-inline:16px}
   .hero{height:445px;background-size:cover;background-position:center}.hero-eyebrow{font-size:.68rem}.hero h1{font-size:3.25rem}.hero-content{padding-left:16px}
-  .about-grid{grid-template-columns:1fr 1.12fr;gap:20px}.about-copy h2{font-size:1.35rem}.about-copy>p:last-child{font-size:.78rem}.pillar{padding-inline:6px}.pillar p{font-size:.62rem}
+  .about-grid{grid-template-columns:1fr 1.12fr;gap:20px}.about-copy h2{font-size:1.35rem}.about-copy>p:not(.section-kicker){font-size:.78rem}.pillar{padding-inline:6px}.pillar p{font-size:.62rem}
   .technology-card{min-height:322px}.card-content{padding:18px}.technology-card h3{font-size:2.25rem}.technology-card a{font-size:.63rem;min-width:170px}
   .contact-grid{gap:35px}.cases-grid{grid-template-columns:.95fr .78fr .58fr}
 }
 @media(max-width:850px){
-  .site-header{height:75px}.menu-toggle{display:block;margin-left:auto}.header-cta{display:none}
+  .site-header{height:75px}.brand{width:165px}.menu-toggle{display:block;margin-left:auto}.header-cta{display:none}
   .site-nav{display:none;position:absolute;top:75px;left:0;right:0;padding:15px 26px 22px;background:#06151deF;border-bottom:1px solid #2c6d6f;flex-direction:column;align-items:stretch;gap:0}
   .site-nav.open{display:flex}.site-nav a{padding:10px 0;font-size:.8rem}
   .hero{height:540px;background-size:cover;background-position:center}.hero h1{font-size:clamp(3.3rem,7vw,4.5rem)}.hero-eyebrow{white-space:normal;max-width:450px;line-height:1.5}
-  .about-grid{grid-template-columns:1fr}.about-copy h2,.about-copy>p:last-child{padding-left:0}.pillars{margin-top:12px}
+  .about-grid{grid-template-columns:1fr}.about-copy h2,.about-copy>p:not(.section-kicker){padding-left:0}.pillars{margin-top:12px}
   .technology-grid{grid-template-columns:repeat(2,1fr);gap:12px}.technology-card{min-height:300px}.technology-card:last-child{grid-column:1/-1;min-height:280px;background-position:center 58%}.technology-card h3{font-size:clamp(1.8rem,3vw,2.3rem)}.technology-card p{font-size:.82rem}.technology-card a{min-width:0;gap:10px;padding-inline:12px}
   .cases-grid{grid-template-columns:1fr 1fr}.cases-copy{grid-column:1/-1;padding:0 0 22px}.cases-copy h2,.cases-copy>p:last-child{margin-left:0}
 }
@@ -125,7 +126,7 @@ dialog>p:not(.section-kicker){color:#c6d9d9;line-height:1.5}
   .hero{height:640px;background-position:61% center}
   .hero-content{justify-content:flex-end;padding-top:90px;padding-bottom:68px}.hero-eyebrow{margin-bottom:17px;font-size:.6rem;letter-spacing:.08em}
   .hero h1{font-size:clamp(2.65rem,11vw,4.2rem)}.hero-copy{font-size:1.35rem}.hero .solid-button{width:100%}
-  .about-band{padding:30px 0}.about-copy h2{font-size:1.55rem}.about-copy>p:last-child{font-size:.85rem}
+  .about-band{padding:30px 0}.about-copy h2{font-size:1.55rem}.about-copy>p:not(.section-kicker){font-size:.85rem}
   .pillars{grid-template-columns:repeat(2,1fr);gap:15px}.pillar{border:1px solid #234b54;min-height:145px;padding:14px}
   .technologies{padding:33px 0}.technologies h2{margin-left:0;font-size:1.45rem}.technology-grid{grid-template-columns:1fr;gap:15px}.technology-card,.technology-card:last-child{grid-column:auto;min-height:365px}.technology-card h3{font-size:2.7rem}.technology-card p{font-size:.92rem}.technology-card a{width:auto;min-width:200px;font-size:.7rem}
   .contact-grid{grid-template-columns:1fr;gap:24px}.contact-grid>div:first-child{padding-left:0}.contact-section h2{font-size:2rem}.contact-section>div>div>p:last-child{font-size:.87rem}.contact-form input{height:46px}.contact-form .solid-button{height:48px}
