@@ -104,16 +104,17 @@
     <section class="contact-section" id="contato" aria-labelledby="contact-title">
       <div class="shell contact-grid">
         <div>
-          <p class="section-kicker"><span></span>VAMOS CONVERSAR?</p>
-          <h2 id="contact-title">FALE COM UM<br><em>ESPECIALISTA</em> SCHIECCHI.</h2>
-          <p>Conte rapidamente o que você precisa.<br>Nossa equipe entrará em contato para entender<br>sua operação e indicar a melhor solução.</p>
+          <p class="section-kicker"><span></span>TEM UM DESAFIO?</p>
+          <h2 id="contact-title"><em>CONTE PARA A GENTE.</em></h2>
+          <p>Máquina, equipamento ou operação. Conte brevemente o que você precisa e nossa equipe entrará em contato para entender o seu caso.</p>
         </div>
         <form id="lead-form" class="contact-form">
-          <label for="lead-name">Nome</label><input id="lead-name" name="nome" autocomplete="name" placeholder="Nome" required>
-          <label for="lead-whatsapp">WhatsApp</label><input id="lead-whatsapp" name="whatsapp" type="tel" autocomplete="tel" inputmode="tel" placeholder="WhatsApp" required>
-          <button class="solid-button" type="submit">Falar com um especialista <span aria-hidden="true">→</span></button>
-          <p class="form-detail">Leva menos de 1 minuto. Nossa equipe entrará em contato para entender sua necessidade.</p>
-          <p class="form-caveat">O botão abre seu aplicativo de e-mail. Revise e envie para concluir o contato.</p>
+          <label for="lead-name">Nome</label><input id="lead-name" name="nome" autocomplete="name" placeholder="Nome" maxlength="120" required>
+          <label for="lead-whatsapp">WhatsApp</label><input id="lead-whatsapp" name="whatsapp" type="tel" autocomplete="tel" inputmode="tel" placeholder="WhatsApp" maxlength="30" required>
+          <label for="lead-message">Mensagem</label><textarea id="lead-message" name="mensagem" placeholder="Conte brevemente o que você precisa" rows="4" maxlength="2000" required></textarea>
+          <button class="solid-button" type="submit">Quero falar com a SCHIECCHI <span aria-hidden="true">→</span></button>
+          <p class="form-detail">Leva menos de 1 minuto. Sem compromisso.</p>
+          <p id="lead-status" class="form-status" role="status" aria-live="polite" hidden></p>
         </form>
       </div>
     </section>

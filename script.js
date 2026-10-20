@@ -22,16 +22,24 @@ document.querySelectorAll("[data-interest]").forEach((link) => {
   });
 });
 
-document.querySelector("#lead-form").addEventListener("submit", (event) => {
+const leadForm = document.querySelector("#lead-form");
+const leadStatus = document.querySelector("#lead-status");
+const whatsappField = document.querySelector("#lead-whatsapp");
+
+whatsappField.addEventListener("input", () => whatsappField.setCustomValidity(""));
+
+leadForm.addEventListener("submit", (event) => {
   event.preventDefault();
-  const name = document.querySelector("#lead-name").value.trim();
-  const whatsapp = document.querySelector("#lead-whatsapp").value.trim();
-  const subject = encodeURIComponent("Contato pelo site SCHIECCHI");
-  const interestLine = selectedTechnology ? `Interesse: ${selectedTechnology}\n` : "";
-  const body = encodeURIComponent(
-    `Nome: ${name}\nWhatsApp: ${whatsapp}\n${interestLine}\nGostaria de falar com um especialista.`
-  );
-  window.location.href = `mailto:contato@schiecchi.com.br?subject=${subject}&body=${body}`;
+  const digits = whatsappField.value.replace(/\D/g, "");
+  if (digits.length < 10 || digits.length > 13) {
+    whatsappField.setCustomValidity("Informe um WhatsApp válido com DDD.");
+    whatsappField.reportValidity();
+    return;
+  }
+
+  // O envio e o registro serão conectados somente após a aprovação do serviço.
+  leadStatus.textContent = "Não foi possível enviar agora. Tente novamente em alguns instantes.";
+  leadStatus.hidden = false;
 });
 
 const upcomingDialog = document.querySelector("#upcoming-dialog");

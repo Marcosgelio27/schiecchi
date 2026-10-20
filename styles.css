@@ -86,14 +86,19 @@ em{font-style:normal;color:var(--teal)}
 .contact-grid>div:first-child{padding-left:35px}
 .contact-section h2{margin:0 0 14px;font-size:clamp(1.7rem,2.4vw,2.8rem);line-height:1.07;letter-spacing:-.03em}
 .contact-section>div>div>p:last-child{margin:0;color:#edf5f5;font-family:Arial,sans-serif;font-size:.93rem;line-height:1.4}
+.contact-grid>div:first-child>p:last-child{max-width:470px}
 .contact-form{display:grid;gap:7px}
 .contact-form label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
-.contact-form input{width:100%;height:38px;padding:0 16px;border:1px solid #48717a;border-radius:7px;background:#0a1b25d9;color:white;outline:none;font-size:.9rem}
-.contact-form input::placeholder{color:#e1eaeb}
-.contact-form input:focus{border-color:var(--teal);box-shadow:0 0 0 2px #11dcb238}
+.contact-form input,.contact-form textarea{width:100%;padding:0 16px;border:1px solid #48717a;border-radius:7px;background:#0a1b25d9;color:white;outline:none;font: .9rem Arial,sans-serif}
+.contact-form input{height:38px}
+.contact-form textarea{min-height:90px;padding:12px 16px;resize:vertical}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:#e1eaeb}
+.contact-form input:focus,.contact-form textarea:focus{border-color:var(--teal);box-shadow:0 0 0 2px #11dcb238}
 .contact-form .solid-button{width:100%;min-height:42px;border-radius:6px}
 .form-detail,.form-caveat{margin:2px 0 0;color:#e2eded;font-family:Arial,sans-serif;font-size:.72rem;line-height:1.25;text-align:center}
 .form-caveat{color:#a0c8c7;font-size:.65rem}
+.form-status{margin:6px 0 0;color:#f3d6c9;font-family:Arial,sans-serif;font-size:.78rem;line-height:1.4;text-align:center}
+.form-status[hidden]{display:none}
 
 .cases-teaser{position:relative;padding:25px 0 36px;background:radial-gradient(ellipse at 42% 120%,#0b3446,#06131c 75%)}
 .cases-grid{position:relative;display:grid;grid-template-columns:1fr .77fr .55fr;align-items:center;gap:0}
@@ -144,7 +149,7 @@ dialog>p:not(.section-kicker){color:#c6d9d9;line-height:1.5}
   .hero h1{font-size:clamp(2.65rem,11vw,4.2rem)}.hero-copy{font-size:1.35rem}.hero .solid-button{width:100%}
   .about-band{padding:38px 0 30px}.about-band:before{width:100%;height:380px;opacity:.2}.about-band:after{right:-85%;top:-10%;width:130%}.about-copy h2{font-size:clamp(2.05rem,9vw,3.1rem);line-height:1.02}.about-copy>p:not(.section-kicker){font-size:.88rem;line-height:1.5}.about-card-grid{grid-template-columns:1fr;gap:10px}.about-card,.about-card:last-child{grid-column:auto;min-height:126px;padding:15px 17px 13px 77px}.about-card svg{position:absolute;top:22px;left:18px;width:38px;height:38px}.about-card h3{margin:0 0 6px;font-size:.95rem}.about-card p{font-size:.82rem}.about-actions{gap:3px;margin:29px 0 21px}.about-actions:before{top:23px}.about-action-icon{width:48px;height:48px}.about-action-icon svg{width:25px;height:25px}.about-action strong{font-size:clamp(.58rem,2.55vw,.78rem)}.about-signature{gap:10px;font-size:.62rem;letter-spacing:.16em}.about-signature:before,.about-signature:after{width:20px;flex:none}
   .technologies{padding:33px 0}.technologies h2{margin-left:0;font-size:1.45rem}.technology-grid{grid-template-columns:1fr;gap:15px}.technology-card,.technology-card:last-child{grid-column:auto;min-height:365px}.technology-card h3{font-size:2.7rem}.technology-card p{font-size:.92rem}.technology-card a{width:auto;min-width:200px;font-size:.7rem}
-  .contact-grid{grid-template-columns:1fr;gap:24px}.contact-grid>div:first-child{padding-left:0}.contact-section h2{font-size:2rem}.contact-section>div>div>p:last-child{font-size:.87rem}.contact-form input{height:46px}.contact-form .solid-button{height:48px}
+  .contact-grid{grid-template-columns:1fr;gap:24px}.contact-grid>div:first-child{padding-left:0}.contact-section h2{font-size:2rem}.contact-section>div>div>p:last-child{font-size:.87rem}.contact-form input{height:46px}.contact-form textarea{min-height:108px}.contact-form .solid-button{height:48px}
   .cases-grid{grid-template-columns:1fr}.cases-copy{padding-bottom:25px}.cases-copy h2{font-size:2rem}.cases-media{height:200px}.cases-action{height:auto;min-height:150px;border:1px solid #3b6570;border-top:0;border-radius:0 0 8px 8px}.cases-action>p:nth-child(2){font-size:.9rem}
   .footer-inner{display:block;text-align:center}.footer-inner a{display:block;margin-top:10px}
 }
