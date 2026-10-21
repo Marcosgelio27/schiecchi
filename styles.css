@@ -69,7 +69,7 @@ em{font-style:normal;color:var(--teal)}
 .technology-card{position:relative;display:flex;align-items:end;min-height:330px;overflow:hidden;border:1px solid #44717c;border-radius:10px;background-position:center;background-size:cover;transition:transform .22s,border-color .22s,box-shadow .22s}
 .technology-card:hover{transform:translateY(-4px);border-color:#17dcb1;box-shadow:0 12px 30px #00d6ae22}
 .technology-card:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#041018 0%,#041018dc 24%,#04101830 62%,#04101810)}
-.gateway-card{background-image:url("assets/gateway-card.jpg")}
+.gateway-card{background-color:#06131c;background-image:url("public/assets/produtos/gateway/gateway-home.png");background-repeat:no-repeat;background-position:center top;background-size:contain}
 .wind-card{background-image:url("assets/axis-wind-card.jpg");background-position:center 45%}
 .level-card{background-image:url("assets/axis-level-card.jpg");background-position:center 52%}
 .card-content{position:relative;z-index:1;padding:25px;width:100%}
