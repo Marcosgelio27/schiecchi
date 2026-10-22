@@ -44,7 +44,7 @@ leadForm.addEventListener("submit", (event) => {
 
 const upcomingDialog = document.querySelector("#upcoming-dialog");
 document.querySelector("#cases-button").addEventListener("click", () => {
-  upcomingDialog.showModal();
+  window.location.assign("casos-reais/bolivia/");
 });
 upcomingDialog.querySelector(".dialog-close").addEventListener("click", () => {
   upcomingDialog.close();
