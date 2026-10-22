@@ -14,7 +14,7 @@ em{font-style:normal;color:var(--teal)}
 .case-hero{position:relative;min-height:620px;overflow:hidden;background:#06121a}
 .case-hero:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#031017 0%,#031017f0 28%,#031017b8 49%,#03101728 78%,transparent 100%),linear-gradient(0deg,#06121a 0%,transparent 23%)}
 .case-hero-image{position:absolute;inset:0;background:url("../../public/assets/casos-reais/bolivia/frames/operacao-07s.jpg") center 44%/cover no-repeat}
-.case-hero-inner{position:relative;z-index:1;display:flex;align-items:center;min-height:620px;padding-block:90px}
+.case-hero-inner{position:relative;z-index:1;display:flex;align-items:center;min-height:620px;padding:60px 0 130px}
 .case-hero-copy{max-width:660px}
 .eyebrow,.section-kicker{margin:0 0 16px;color:#e9f5f1;font-size:.72rem;font-weight:800;letter-spacing:.25em;text-transform:uppercase}
 .eyebrow:before,.section-kicker:before{content:"";display:inline-block;width:27px;height:4px;margin-right:12px;vertical-align:middle;border-radius:2px;background:var(--teal)}
@@ -88,7 +88,8 @@ h1{margin:0 0 27px;font-family:"Arial Black",Arial,sans-serif;font-size:clamp(2.
   .case-hero h1{font-size:clamp(2rem,8vw,3rem)}
   .case-hero-copy .hero-lead{font-size:1.12rem!important;line-height:1.5!important}
   .case-hero-copy p:not(.eyebrow):not(.client-line){font-size:.96rem;line-height:1.62}
-  .case-hero:after{background:linear-gradient(0deg,#06121a 0%,#06121af2 31%,#06121ab8 64%,#06121a2e 100%)}
+  .case-hero:after{background:linear-gradient(0deg,#06121a 0%,#06121ae8 35%,#06121ac9 68%,#06121a7d 100%)}
+  .case-hero-inner{align-items:flex-start;padding:95px 0 70px}
   .section h2{margin-bottom:22px;line-height:1.13}
   .section-copy p:not(.section-kicker),.video-section p:not(.section-kicker){font-size:1rem;line-height:1.65}
   .section-copy p:not(.section-kicker){margin-bottom:17px}
