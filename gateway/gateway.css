@@ -140,3 +140,12 @@
   .gateway-compatibility{background-size:cover}
 }
 @media(max-width:440px){.gateway-flow li{grid-template-columns:84px 30px minmax(0,1fr)}.gateway-flow .flow-visual{width:84px;height:88px}.gateway-flow:before{left:99px}.gateway-flow li:before{left:99px}.gateway-flow li:not(:last-child):after{left:90px}.network-icon{width:68px;height:68px}}
+
+/* A infografia oficial já contém toda a explicação. Exiba-a integralmente. */
+.gateway-how-infographic{padding:20px 0;background:#020c0f}
+.gateway-how-infographic .shell{max-width:1600px;width:calc(100% - 56px)}
+.gateway-how-infographic figure{margin:0}
+.gateway-how-infographic a{display:block;cursor:zoom-in}
+.gateway-how-infographic img{display:block;width:100%;height:auto;max-width:none}
+.gateway-how-infographic figcaption{display:none}
+@media(max-width:700px){.gateway-how-infographic{padding:12px 0}.gateway-how-infographic .shell{width:calc(100% - 20px)}.gateway-how-infographic figcaption{display:block;margin:9px 0 0;color:#9ed4ca;font:12px Arial,sans-serif;text-align:center}}
