@@ -1,0 +1,226 @@
+.wind-page{background:#031014;color:#f4faf9}
+.wind-page .site-header{position:relative;height:78px;background:#020b0e}
+.wind-page .site-header:after{height:12px}
+.wind-page .header-inner{display:grid;grid-template-columns:190px minmax(0,1fr) auto;align-items:center;gap:clamp(20px,2.6vw,42px)}
+.wind-page .brand{width:190px;transform:none}
+.wind-page .site-nav{display:flex;justify-content:center;gap:clamp(15px,2.1vw,34px);margin:0}
+.wind-page .site-nav a{font-size:clamp(.68rem,.79vw,.78rem);letter-spacing:.035em}
+.wind-page .site-nav .mobile-nav-cta{display:none}
+.wind-page .header-cta{min-height:39px;padding:9px 20px;border:1px solid #13d9aa;border-radius:24px;background:#052221;color:#69efcd;box-shadow:none;font-size:.7rem}
+.wind-page .site-nav .active{color:#47ecc5}
+.wind-page .site-nav .active:after{content:"";position:absolute;left:0;right:0;bottom:1px;height:2px;background:#32dfb7}
+.wind-page h1,.wind-page h2,.wind-page h3{font-family:Bahnschrift,"Arial Narrow",Arial,sans-serif;font-weight:900}
+.wind-page h2{margin:0;line-height:1.04;letter-spacing:-.035em}
+.wind-page p{line-height:1.45}
+.wind-page em{color:#13ddba;font-style:normal}
+.wind-kicker{display:flex;align-items:center;gap:11px;margin:0 0 14px;color:#27e6c1;font-size:.8rem;font-weight:900;letter-spacing:.09em;text-transform:uppercase}
+.wind-kicker:before{content:"";flex:none;width:30px;height:2px;background:#2deac4}
+.wind-button{display:inline-flex;align-items:center;justify-content:space-between;gap:28px;min-height:43px;padding:9px 19px;border:1px solid #08e4bd;border-radius:24px;background:#032725cf;color:#35f5d0;font-size:.75rem;font-weight:900;letter-spacing:.015em;text-transform:uppercase;white-space:nowrap}
+.wind-button span{font-size:1.2rem}
+.wind-button:hover,.wind-button:focus-visible{background:#0de4b6;color:#031a1b}
+
+.wind-hero{position:relative;isolation:isolate;overflow:hidden;min-height:525px;border-bottom:1px solid #13514c;background:#09202a url("../public/assets/produtos/axis-wind/axis-wind-card.jpg") right 42%/cover no-repeat}
+.wind-hero:before{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,#021015f7 0%,#031821e9 28%,#071c23ae 51%,#0613195c 77%,#03121876),linear-gradient(0deg,#031015ac,transparent 50%)}
+.wind-hero-inner{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.95fr);align-items:center;gap:5%;min-height:525px}
+.wind-hero-copy{position:relative;z-index:1;max-width:695px;padding:45px 0}
+.wind-hero h1{margin:0 0 19px;font-size:clamp(2.8rem,4.4vw,4.85rem);line-height:.96;letter-spacing:-.042em}
+.wind-hero-copy>p:not(.wind-kicker){max-width:620px;margin:0 0 18px;color:#eef7f6;font-family:Arial,sans-serif;font-size:clamp(1rem,1.35vw,1.25rem)}
+.wind-hero-product{display:grid;place-items:center;min-height:290px;margin:18px 0;border:1px solid #2a8d7c66;border-radius:12px;background:linear-gradient(140deg,#061718df,#09292bae);box-shadow:0 22px 80px #001b1ac9}
+.wind-image-pending{display:grid;place-items:center;overflow:hidden;color:#75c5b6;text-align:center}
+.wind-image-pending span{max-width:75%;padding:8px 10px;border:1px solid #1c6a60a6;border-radius:4px;background:#041a1acd;font-size:.71rem;font-weight:800;letter-spacing:.13em;line-height:1.4}
+
+.wind-section{padding:58px 0 62px}
+.wind-how{border-bottom:1px solid #1d5c55;background:radial-gradient(ellipse at 48% 75%,#0a35314d,transparent 65%),#031116}
+.wind-section-heading{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:end;margin-bottom:28px}
+.wind-section-heading h2{font-size:clamp(2.7rem,3.6vw,4.25rem)}
+.wind-section-heading>p{max-width:560px;margin:0 0 6px;padding-left:20px;border-left:1px solid #24786b;color:#e2eeed;font-family:Arial,sans-serif;font-size:1rem}
+.wind-flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin:0;padding:0;list-style:none}
+.wind-flow li{position:relative;min-width:0;padding:0 8px 0 0}
+.wind-flow li:not(:first-child){padding-left:8px}
+.wind-flow li:not(:last-child):after{content:"→";position:absolute;z-index:2;top:81px;right:-13px;width:28px;background:#03181a;color:#4df5d2;font-size:2rem;line-height:1;text-align:center}
+.wind-flow-visual{display:grid;place-items:center;overflow:hidden;height:175px;background:#061b1d}
+.wind-flow-visual img{display:block;width:100%;height:100%;object-fit:cover}
+.wind-flow-crane img{object-position:center 58%}
+.wind-flow-visual.wind-image-pending{border:1px solid #1b5049}
+.wind-connection-symbol svg{width:130px;height:130px;stroke:#42e5ce;stroke-width:2;filter:drop-shadow(0 0 8px #16e8c366)}
+.wind-flow h3{margin:15px 0 6px;padding-left:12px;border-left:1px solid #27bba1;color:#fff;font-size:1.03rem;line-height:1.1}
+.wind-flow p{min-height:50px;margin:0;padding-left:12px;border-left:1px solid #27bba1;color:#cedfdd;font-family:Arial,sans-serif;font-size:.86rem;line-height:1.32}
+
+.wind-technology{display:grid;grid-template-columns:1fr 1fr;min-height:350px;border-bottom:1px solid #185a54;background:#041116}
+.wind-technology-photos{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:2px;min-height:350px;background:#092321}
+.wind-technology-photos>div:first-child{grid-row:1/3;background:radial-gradient(circle at 60% 50%,#0c4f46,#04191c 68%)}
+.wind-technology-photos>div:nth-child(2){background:radial-gradient(circle at 50% 50%,#0b443d,#04191c 73%)}
+.wind-technology-photos>div:nth-child(3){background:radial-gradient(circle at 50% 50%,#123f3a,#04191c 73%)}
+.wind-technology-copy{align-self:center;max-width:760px;padding:34px clamp(30px,4.2vw,75px)}
+.wind-technology h2{font-size:clamp(2.15rem,2.8vw,3.4rem)}
+.wind-technology-copy>p:not(.wind-kicker){max-width:620px;margin:16px 0 20px;color:#e1eeea;font-family:Arial,sans-serif;font-size:.95rem}
+.wind-features{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;margin:0;padding:19px 0 0;border-top:1px solid #27675e;list-style:none}
+.wind-features li{display:flex;align-items:center;min-height:78px;padding:8px 10px;border-left:1px solid #275c55;color:#f0f7f3;font-size:.66rem;font-weight:900;line-height:1.3}
+.wind-features li:first-child{border-left:0;padding-left:0}
+.wind-features li:before{content:"";display:block;flex:none;width:8px;height:8px;margin-right:7px;border:1px solid #1ce7bc;border-radius:50%;box-shadow:0 0 8px #16d7ae}
+
+.wind-application{position:relative;isolation:isolate;min-height:310px;background:#eef1ed url("../public/assets/produtos/axis-wind/axis-wind-card.jpg") right 53%/51% auto no-repeat;color:#07151a}
+.wind-application:before{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,#f2f3f0 0%,#eff2f0 47%,#eff2f0db 54%,transparent 70%)}
+.wind-application-inner{display:flex;align-items:center;min-height:310px;padding-block:35px}
+.wind-application-inner>div{max-width:690px}
+.wind-application .wind-kicker{color:#006c60}
+.wind-application .wind-kicker:before{background:#09b99b}
+.wind-application h2{font-size:clamp(2.4rem,3.1vw,3.85rem)}
+.wind-application p:not(.wind-kicker){max-width:580px;margin:14px 0;color:#1a3034;font-family:Arial,sans-serif;font-size:.96rem}
+.wind-button-dark{background:#04262a;color:#2debc8}
+
+.wind-safety{min-height:295px;border-block:1px solid #135047;background:radial-gradient(ellipse at 70% 40%,#123a39,#031216 68%)}
+.wind-safety-inner{display:grid;grid-template-columns:1fr 1fr;gap:5%;align-items:center;min-height:295px;padding-block:28px}
+.wind-safety h2{font-size:clamp(2.3rem,3vw,3.7rem)}
+.wind-safety p:not(.wind-kicker){max-width:600px;color:#e1eae9;font-family:Arial,sans-serif;font-size:.96rem}
+.wind-safety-note{padding-top:10px;border-top:1px solid #28665a;color:#a9d0c7!important;font-size:.79rem!important}
+.wind-safety figure{min-height:235px;margin:0;border:1px solid #266e64;border-radius:7px;background:linear-gradient(145deg,#061821,#0a2930)}
+
+.wind-closing{position:relative;isolation:isolate;min-height:300px;background:#081b22 url("../public/assets/casos-reais/home-hero.jpg") center 64%/cover no-repeat}
+.wind-closing:before{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,#031218e9,#0312187c 58%,#031218a6),linear-gradient(0deg,#031218d9,transparent 50%)}
+.wind-closing-inner{display:flex;align-items:end;justify-content:space-between;gap:30px;min-height:300px;padding-block:53px}
+.wind-closing h2{margin:0 0 20px;font-size:clamp(2.45rem,3.4vw,4.2rem)}
+.wind-closing-inner>p{margin:0 0 9px;color:#f5faf8;font-size:.94rem;font-weight:900;text-align:right}
+
+@media(max-width:1120px){.wind-page .header-inner{grid-template-columns:170px minmax(0,1fr) auto;gap:18px}.wind-page .brand{width:170px}.wind-page .site-nav{gap:clamp(12px,1.65vw,22px)}.wind-page .header-cta{padding-inline:16px;font-size:.64rem}.wind-hero h1{font-size:clamp(2.6rem,4.8vw,3.8rem)}.wind-technology{grid-template-columns:.85fr 1.15fr}.wind-features{grid-template-columns:repeat(3,minmax(0,1fr))}.wind-features li:nth-child(4){border-left:0}}
+@media(max-width:880px){.wind-page .site-header{height:75px}.wind-page .header-inner{display:flex;gap:0}.wind-page .brand{width:165px}.wind-page .menu-toggle{display:block;margin-left:auto}.wind-page .header-cta{display:none}.wind-page .site-nav{display:none;position:absolute;top:75px;left:0;right:0;z-index:5;margin:0;padding:16px 27px 25px;background:#06151d;border-bottom:1px solid #2c6d6f;flex-direction:column;align-items:stretch;gap:0}.wind-page .site-nav.open{display:flex}.wind-page .site-nav a{width:max-content;padding:12px 0;font-size:.83rem}.wind-page .site-nav .mobile-nav-cta{display:inline-flex;align-items:center;justify-content:center;gap:12px;width:max-content;min-height:43px;margin-top:15px;padding:11px 19px;border-radius:24px;background:linear-gradient(180deg,#20ebac,#06bc90);color:#031920;font-size:.73rem;font-weight:900}.wind-flow-visual{height:135px}.wind-flow li:not(:last-child):after{top:60px}.wind-flow h3{font-size:.85rem}.wind-flow p{font-size:.75rem}.wind-application{background-size:65% auto}}
+@media(max-width:700px){.wind-hero,.wind-hero-inner{min-height:0}.wind-hero{background-position:66% center}.wind-hero-inner{grid-template-columns:1fr;gap:0;padding-block:34px}.wind-hero-copy{padding:0}.wind-hero h1{font-size:clamp(2.25rem,7.7vw,3.3rem)}.wind-hero-copy>p:not(.wind-kicker){font-size:.97rem}.wind-hero-product{width:100%;min-height:205px;margin:26px 0 0}.wind-section{padding:45px 0}.wind-section-heading{grid-template-columns:1fr;gap:15px}.wind-section-heading h2{font-size:clamp(2.3rem,7.2vw,3.3rem)}.wind-section-heading>p{padding-left:14px;font-size:.9rem}.wind-flow{grid-template-columns:1fr;gap:0}.wind-flow li,.wind-flow li:not(:first-child){display:grid;grid-template-columns:120px minmax(0,1fr);grid-template-rows:auto auto;column-gap:18px;min-height:124px;padding:10px 0 10px 20px;border-left:2px solid #159b80}.wind-flow li:before{content:"";position:absolute;left:-7px;top:55px;width:12px;height:12px;border:2px solid #21e5b9;border-radius:50%;background:#031216}.wind-flow li:not(:last-child):after{content:"↓";top:auto;bottom:-13px;right:auto;left:-10px;width:19px;background:#031216;font-size:1.15rem}.wind-flow-visual{grid-column:1;grid-row:1/3;width:120px;height:102px}.wind-flow h3{grid-column:2;grid-row:1;align-self:end;margin:0 0 4px;padding:0;border:0;font-size:.9rem}.wind-flow p{grid-column:2;grid-row:2;min-height:0;margin:0;padding:0;border:0;font-size:.78rem}.wind-connection-symbol svg{width:82px;height:82px}.wind-technology{grid-template-columns:1fr}.wind-technology-photos{min-height:250px}.wind-technology-copy{padding:30px 24px 37px}.wind-technology h2{font-size:clamp(2.1rem,6.4vw,3rem)}.wind-application{background-position:right bottom;background-size:auto 85%}.wind-application:before{background:linear-gradient(90deg,#f2f3f0f2,#f2f3f0d5 75%,#f2f3f097)}.wind-application-inner{min-height:325px}.wind-application h2{font-size:clamp(2.1rem,6.2vw,3rem)}.wind-safety-inner{grid-template-columns:1fr;gap:17px;padding-block:35px}.wind-safety h2{font-size:clamp(2.3rem,7vw,3.2rem)}.wind-safety figure{min-height:205px}.wind-closing-inner{min-height:290px;align-items:flex-start;flex-direction:column;justify-content:center;padding-block:42px}.wind-closing h2{font-size:clamp(2.3rem,6.7vw,3.3rem)}.wind-closing-inner>p{text-align:left}}
+@media(max-width:440px){.wind-page .brand{width:145px}.wind-hero h1{font-size:clamp(2.1rem,8.4vw,2.8rem)}.wind-flow li,.wind-flow li:not(:first-child){grid-template-columns:92px minmax(0,1fr);column-gap:13px}.wind-flow-visual{width:92px;height:90px}.wind-technology-photos{grid-template-columns:1fr 1fr;min-height:220px}.wind-features{grid-template-columns:repeat(2,minmax(0,1fr))}.wind-features li{min-height:65px}.wind-features li:nth-child(3),.wind-features li:nth-child(5){border-left:0}.wind-features li:nth-child(4){border-left:1px solid #275c55}.wind-application{background-size:auto 70%}.wind-page .footer-inner{flex-direction:column;align-items:center;text-align:center}}
+
+/* Approved AXIS WIND references, framed to keep former names outside the visible area. */
+.wind-hero-product.wind-reference-display{min-height:340px;border:0;border-radius:0;background-image:url("../public/assets/produtos/axis-wind/referencia-site-axis-wind-schiecchi.png");background-repeat:no-repeat;background-size:250% auto;background-position:78% 8%;box-shadow:none}
+.wind-flow-solar,.wind-flow-display,.wind-flow-alarm,.wind-tech-display,.wind-tech-solar,.wind-tech-limit,.wind-alarm-photo{background-image:url("../public/assets/produtos/axis-wind/dispositivos-axis-wind.png");background-repeat:no-repeat}
+.wind-flow-solar{background-size:300% auto;background-position:20% 84%}
+.wind-flow-display{background-image:url("../public/assets/produtos/axis-wind/referencia-site-axis-wind-schiecchi.png");background-size:270% auto;background-position:78% 8%}
+.wind-flow-alarm{background-size:315% auto;background-position:100% 12%}
+.wind-technology-photos>div.wind-tech-display{background-image:url("../public/assets/produtos/axis-wind/dispositivos-axis-wind.png");background-size:600% auto;background-position:50% 11%}
+.wind-technology-photos>div.wind-tech-solar{background-image:url("../public/assets/produtos/axis-wind/dispositivos-axis-wind.png");background-size:auto 270%;background-position:20% 86%}
+.wind-technology-photos>div.wind-tech-limit{background-image:url("../public/assets/produtos/axis-wind/dispositivos-axis-wind.png");background-size:auto 245%;background-position:88% 93%}
+.wind-safety figure.wind-alarm-photo{min-height:320px;background-image:url("../public/assets/produtos/axis-wind/dispositivos-axis-wind.png");background-size:auto 400%;background-position:100% 12%}
+.wind-section-heading{grid-template-columns:1fr}
+.wind-section-heading h2{max-width:950px;font-size:clamp(2.4rem,3.3vw,4rem)}
+.wind-technology-photos>div:first-child,.wind-technology-photos>div:nth-child(2),.wind-technology-photos>div:nth-child(3){background-color:#07191c}
+@media(max-width:700px){.wind-hero-product.wind-reference-display{min-height:240px;background-size:250% auto;background-position:78% 8%}.wind-section-heading h2{font-size:clamp(2rem,6.4vw,3rem)}.wind-flow-solar{background-size:300% auto}.wind-flow-display{background-size:270% auto}.wind-flow-alarm{background-size:500% auto}.wind-safety figure.wind-alarm-photo{min-height:210px;background-size:auto 400%}}
+
+/* Composição da referência oficial AXIS WIND. Restrita a esta página. */
+.wind-hero,.wind-hero-inner{min-height:430px}
+.wind-hero{background-position:center 49%}
+.wind-hero:before{background:linear-gradient(90deg,#021015f9 0%,#031821e9 29%,#071c23b3 54%,#06131942 83%),linear-gradient(0deg,#03101580,transparent 55%)}
+.wind-hero-copy{padding:30px 0}
+.wind-hero h1{font-size:clamp(2.7rem,3.9vw,4rem)}
+.wind-hero-copy>p:not(.wind-kicker){max-width:630px}
+.wind-hero-product.wind-reference-display{min-height:300px;background-size:250% auto;background-position:78% 8%}
+.wind-how{padding:37px 0 36px}
+.wind-section-heading{grid-template-columns:minmax(0,.8fr) minmax(0,1fr);align-items:end;gap:6%;margin-bottom:16px}
+.wind-section-heading h2{font-size:clamp(2.4rem,3vw,3.4rem)}
+.wind-section-heading>p{margin:0 0 3px}
+.wind-flow-visual{height:165px}
+.wind-flow h3{margin-top:10px}
+.wind-flow p{min-height:47px}
+.wind-flow-hook img{object-position:78% 60%;transform:scale(1.6)}
+.wind-flow-dashboard{background-image:url("../public/assets/produtos/axis-wind/referencia-site-axis-wind-schiecchi.png");background-repeat:no-repeat;background-size:590% auto;background-position:65% 41%}
+.wind-technology{min-height:310px;grid-template-columns:1fr 1fr}
+.wind-technology-photos{min-height:310px}
+.wind-technology-copy{padding-block:28px}
+.wind-technology h2{font-size:clamp(2.2rem,2.65vw,3rem)}
+.wind-technology-copy>p:not(.wind-kicker){margin:10px 0 14px}
+.wind-features{padding-top:13px}
+.wind-features li{display:flex;flex-direction:column;justify-content:center;gap:5px;min-height:91px;padding:7px 8px;text-align:center;font-size:.64rem}
+.wind-features li:before{display:none}
+.wind-features svg{display:block;flex:none;width:36px;height:36px;margin:auto auto 3px;fill:none;stroke:#15dfc2;stroke-width:2.1;stroke-linecap:round;stroke-linejoin:round}
+.wind-features span{display:block}
+.wind-application,.wind-application-inner{min-height:280px}
+.wind-application{background-size:55% auto;background-position:right 42%}
+.wind-application-inner{padding-block:28px}
+.wind-application h2{font-size:clamp(2.25rem,2.8vw,3.2rem)}
+.wind-safety,.wind-safety-inner{min-height:260px}
+.wind-safety-inner{grid-template-columns:1fr 1fr;gap:5%;padding-block:18px}
+.wind-safety h2{font-size:clamp(2.2rem,2.8vw,3.3rem)}
+.wind-safety p:not(.wind-kicker){max-width:570px}
+.wind-safety figure.wind-alarm-photo{min-height:225px;background-size:auto 430%;background-position:100% 12%}
+.wind-closing,.wind-closing-inner{min-height:240px}
+.wind-closing-inner{padding-block:35px}
+.wind-hero-product.wind-reference-display{background-image:url("../public/assets/produtos/axis-wind/referencia-site-axis-wind-schiecchi.png");background-size:310% auto;background-position:73% 6%}
+.wind-flow-display{background-image:url("../public/assets/produtos/axis-wind/referencia-site-axis-wind-schiecchi.png");background-size:420% auto;background-position:68% 6%}
+.wind-flow-dashboard{background-size:800% auto;background-position:60% 39%}
+.wind-safety,.wind-safety-inner{min-height:390px}
+.wind-safety figure.wind-alarm-photo{min-height:350px;background-size:320% auto;background-position:100% 12%}
+
+@media(max-width:1120px){.wind-features{grid-template-columns:repeat(5,minmax(0,1fr))}.wind-features li:nth-child(4){border-left:1px solid #275c55}}
+@media(max-width:880px){.wind-hero,.wind-hero-inner{min-height:440px}.wind-flow-visual{height:125px}.wind-flow li:not(:last-child):after{top:54px}.wind-technology{grid-template-columns:1fr}.wind-technology-photos{min-height:270px}.wind-technology-copy{max-width:none}.wind-application{background-size:72% auto}}
+@media(max-width:700px){
+  .wind-hero,.wind-hero-inner{min-height:0}.wind-hero-inner{padding-block:36px}.wind-hero h1{font-size:clamp(2.25rem,7.7vw,3.3rem)}
+  .wind-hero-product.wind-reference-display{min-height:220px;margin:20px 0 0;background-size:310% auto;background-position:73% 6%}
+  .wind-how{padding:39px 0}.wind-section-heading{grid-template-columns:1fr;gap:11px}.wind-section-heading h2{font-size:clamp(2.25rem,7.2vw,3.2rem)}
+  .wind-flow-visual{height:102px}.wind-flow li:not(:last-child):after{top:auto}
+  .wind-flow-display{background-size:500% auto;background-position:68% 5%}
+  .wind-flow-dashboard{background-size:1050% auto;background-position:61% 39%}
+  .wind-technology-photos{min-height:240px}.wind-technology-copy{padding:28px 24px 34px}
+  .wind-features{grid-template-columns:repeat(2,minmax(0,1fr))}.wind-features li{min-height:100px}.wind-features li:nth-child(3),.wind-features li:nth-child(5){border-left:0}.wind-features li:nth-child(4){border-left:1px solid #275c55}
+  .wind-application,.wind-application-inner{min-height:330px}.wind-application{background-size:auto 80%}
+  .wind-safety,.wind-safety-inner{min-height:0}.wind-safety-inner{grid-template-columns:1fr;gap:15px;padding-block:30px}.wind-safety figure.wind-alarm-photo{min-height:0;aspect-ratio:1.85;background-size:320% auto;background-position:100% 12%}
+  .wind-closing,.wind-closing-inner{min-height:280px}
+}
+@media(max-width:440px){.wind-technology-photos{min-height:215px}.wind-flow-dashboard{background-size:1050% auto}.wind-application{background-size:auto 72%}}
+
+/* Proporções da composição AXIS WIND aprovada para desktop. */
+@media(min-width:881px){
+  .wind-page .shell{width:min(100% - 64px,1280px)}
+  .wind-page .site-header{height:50px;border-bottom:1px solid #22515a}
+  .wind-page .site-header:after{display:none}
+  .wind-page .header-inner{grid-template-columns:165px minmax(0,1fr) auto;gap:26px;height:50px}
+  .wind-page .brand{width:165px}
+  .wind-page .header-cta{min-height:33px;padding:5px 18px}
+  .wind-hero,.wind-hero-inner{height:232px;min-height:232px}
+  .wind-hero{background-color:#021015;background-image:linear-gradient(90deg,#021015 0%,#021015 37%,#021015e8 48%,#02101500 70%),url('../public/assets/produtos/axis-wind/referencia-site-axis-wind-schiecchi.png');background-size:100% 100%,auto 1024px;background-position:center,right -47px;background-repeat:no-repeat}
+  .wind-hero:before{background:linear-gradient(90deg,#021015 0%,#021015e8 30%,#0210157a 48%,transparent 70%)}
+  .wind-hero-inner{display:block}
+  .wind-hero-copy{max-width:620px;padding:12px 0 9px}
+  .wind-kicker{margin-bottom:7px;font-size:.69rem}
+  .wind-hero h1{margin-bottom:5px;font-size:clamp(2.2rem,2.8vw,2.68rem);line-height:.95}
+  .wind-hero-copy>p:not(.wind-kicker){max-width:520px;margin-bottom:8px;font-size:.86rem;line-height:1.2}
+  .wind-button{min-height:32px;padding:4px 17px;font-size:.66rem}
+  .wind-hero-product.wind-reference-display{display:none}
+  .wind-flow-display{background-size:270% auto;background-position:78% 6%}
+  .wind-how{padding:11px 0 12px}
+  .wind-section-heading{grid-template-columns:43% 1fr;gap:0;margin-bottom:9px}
+  .wind-section-heading h2{font-size:clamp(1.55rem,2vw,2rem)}
+  .wind-section-heading>p{max-width:600px;font-size:.8rem;line-height:1.18}
+  .wind-flow{gap:16px}
+  .wind-flow li,.wind-flow li:not(:first-child){padding:0}
+  .wind-flow-visual{height:112px}
+  .wind-flow li:not(:last-child):after{top:42px;right:-19px;background:transparent;font-size:2.1rem}
+  .wind-flow h3{margin:5px 0 2px;font-size:.84rem}
+  .wind-flow p{min-height:34px;font-size:.76rem;line-height:1.2}
+  .wind-technology{min-height:200px}
+  .wind-technology-photos{min-height:200px;display:block;background-image:url('../public/assets/produtos/axis-wind/referencia-site-axis-wind-schiecchi.png');background-repeat:no-repeat;background-size:215% auto;background-position:left 64.6%}
+  .wind-technology-photos>div{display:none}
+  .wind-technology-copy{padding:10px 24px 10px 28px}
+  .wind-technology h2{font-size:clamp(1.55rem,1.95vw,2rem)}
+  .wind-technology-copy>p:not(.wind-kicker){margin:4px 0 8px;font-size:.77rem;line-height:1.2}
+  .wind-features{padding-top:7px}
+  .wind-features li{min-height:62px;padding:3px 5px;font-size:.56rem}
+  .wind-features svg{width:27px;height:27px;margin-bottom:1px}
+  .wind-application,.wind-application-inner{min-height:138px}
+  .wind-application{background-size:55% auto;background-position:right 44%}
+  .wind-application-inner{padding-block:8px}
+  .wind-application-inner>div{max-width:610px}
+  .wind-application h2{font-size:clamp(1.5rem,1.9vw,1.95rem)}
+  .wind-application p:not(.wind-kicker){margin:3px 0 5px;font-size:.75rem;line-height:1.2}
+  .wind-safety,.wind-safety-inner{min-height:175px}
+  .wind-safety-inner{padding-block:9px}
+  .wind-safety h2{font-size:clamp(1.7rem,2.1vw,2.2rem)}
+  .wind-safety p:not(.wind-kicker){margin:6px 0;font-size:.8rem;line-height:1.2}
+  .wind-safety-note{padding-top:6px!important;font-size:.68rem!important}
+  .wind-safety figure.wind-alarm-photo{min-height:155px;background-image:linear-gradient(90deg,#06191d 0%,#06191d 14%,transparent 26%,transparent 88%,#06191d 100%),url('../public/assets/produtos/axis-wind/dispositivos-axis-wind.png');background-size:100% 100%,auto 750px;background-position:center,calc(50% - 360px) -110px}
+  .wind-closing,.wind-closing-inner{min-height:110px}
+  .wind-closing-inner{padding-block:11px}
+  .wind-closing h2{margin-bottom:5px;font-size:clamp(1.65rem,2.2vw,2.3rem)}
+  .wind-closing-inner>p{font-size:.72rem}
+}
+@media(min-width:1537px){
+  .wind-hero{background-image:linear-gradient(90deg,#021015 0%,#021015 52%,#021015e8 59%,#02101500 70%),url('../public/assets/produtos/axis-wind/referencia-site-axis-wind-schiecchi.png')}
+  .wind-hero:before{background:linear-gradient(90deg,#021015 0%,#021015e8 52%,transparent 70%)}
+  .wind-technology-photos{background-size:auto 1024px;background-position:left 64.6%;position:relative}
+  .wind-technology-photos:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 58%,#041116 76%)}
+}

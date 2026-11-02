@@ -52,3 +52,15 @@ upcomingDialog.querySelector(".dialog-close").addEventListener("click", () => {
 upcomingDialog.querySelector("a").addEventListener("click", () => {
   upcomingDialog.close();
 });
+
+const floatingWhatsApp = document.querySelector(".whatsapp-float");
+const contactOrFooter = document.querySelectorAll(".contact-section, .site-footer");
+const visibleSections = new Set();
+const floatingVisibility = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) visibleSections.add(entry.target);
+    else visibleSections.delete(entry.target);
+  });
+  floatingWhatsApp.classList.toggle("is-hidden", visibleSections.size > 0);
+});
+contactOrFooter.forEach((section) => floatingVisibility.observe(section));
