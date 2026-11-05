@@ -11,6 +11,7 @@ em{font-style:normal;color:var(--teal)}
 .header-inner{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .brand{display:block;width:223px;flex:none;background:#000}.brand img{width:100%;height:auto}
 .back-link{color:#dfedeb;font-size:.76rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase}.back-link:hover{color:var(--teal)}
+@media(max-width:700px){.site-header{height:auto;min-height:76px}.header-inner{flex-wrap:wrap;justify-content:center;gap:6px 18px;padding-block:10px}.header-inner .brand{width:100%;display:flex;justify-content:center}.header-inner .brand img{width:155px}.header-inner .back-link{font-size:.6rem}}
 .case-hero{position:relative;min-height:620px;overflow:hidden;background:#06121a}
 .case-hero:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#031017 0%,#031017f0 28%,#031017b8 49%,#03101728 78%,transparent 100%),linear-gradient(0deg,#06121a 0%,transparent 23%)}
 .case-hero-image{position:absolute;inset:0;background:url("../../public/assets/casos-reais/bolivia/frames/operacao-07s.jpg") center 44%/cover no-repeat}

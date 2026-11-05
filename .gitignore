@@ -1,0 +1,5 @@
+# Segredos e configuração de ambiente local
+.env
+.env.*
+supabase/.env
+*.local.js

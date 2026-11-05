@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Portal do Cliente — SCHIECCHI</title>
+  <link rel="stylesheet" href="../portal/portal.css">
+  <script type="module" src="../portal/auth.js"></script>
+</head>
+<body class="portal-page login-page">
+  <main class="login-wrap">
+    <a class="portal-brand" href="../"><img src="../public/assets/logos/schiecchi-logo.png" alt="SCHIECCHI" width="2172" height="724"></a>
+    <section class="login-panel" aria-labelledby="login-title">
+      <p class="portal-kicker">SISTEMA DE TELEMETRIA SCHIECCHI</p>
+      <h1 id="login-title">PORTAL DO <em>CLIENTE.</em></h1>
+      <p class="portal-lead">TELEMETRIA E MONITORAMENTO DE MÁQUINAS</p>
+      <form id="login-form">
+        <label>USUÁRIO <span>E-mail de acesso</span><input name="username" type="email" autocomplete="username" required maxlength="254"></label>
+        <label>SENHA <span class="password-wrap"><input name="password" type="password" autocomplete="current-password" required><button id="toggle-password" type="button">MOSTRAR</button></span></label>
+        <button class="portal-button" type="submit">ENTRAR <span aria-hidden="true">→</span></button>
+      </form>
+      <button id="reset-password" class="quiet-button" type="button">Redefinir senha</button>
+      <form id="new-password-form" hidden><label>NOVA SENHA<input name="new_password" type="password" autocomplete="new-password" minlength="12" required></label><button class="portal-button" type="submit">SALVAR NOVA SENHA</button></form>
+      <p id="login-status" class="portal-message" role="status" hidden></p>
+    </section>
+    <a class="back-site" href="../">← VOLTAR AO SITE SCHIECCHI</a>
+  </main>
+</body>
+</html>
