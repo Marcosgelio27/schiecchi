@@ -6,8 +6,8 @@
   <meta name="theme-color" content="#07131c">
   <meta name="description" content="SCHIECCHI — tecnologia que conecta máquinas, dados e pessoas. Eletrônica, software, IoT, automação e inteligência artificial para máquinas e equipamentos.">
   <title>SCHIECCHI — Tecnologia que conecta</title>
-  <link rel="preload" href="public/assets/hero/home-hero-clean.png" as="image">
-  <link rel="stylesheet" href="styles.css?v=20261102">
+  <link rel="preload" href="public/assets/hero/home-hero-schiecchi-clean.png" as="image">
+  <link rel="stylesheet" href="styles.css?v=20261103-local">
   <script src="script.js?v=20261102" defer></script>
 </head>
 <body>
@@ -20,7 +20,7 @@
       <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
       <nav class="site-nav" id="site-nav" aria-label="Menu principal">
         <a class="active" href="#inicio">Início</a>
-        <a href="#tecnologias">Tecnologias</a>
+        <a href="#tecnologias">Produtos</a>
         <a href="#casos-reais">Casos reais</a>
         <a href="#sobre">Sobre nós</a>
         <a href="#contato">Contato</a>
@@ -30,26 +30,11 @@
   </header>
 
   <main id="conteudo">
-    <section class="hero" aria-labelledby="hero-title">
-      <svg class="hero-tech" viewBox="0 0 1024 445" preserveAspectRatio="none" aria-hidden="true">
-        <defs>
-          <pattern id="hero-map-dots" width="4" height="4" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".7" fill="#24bcf2"/></pattern>
-          <linearGradient id="hero-route" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#0c9cba" stop-opacity="0"/><stop offset=".22" stop-color="#19d9df" stop-opacity=".8"/><stop offset=".73" stop-color="#36ffe7" stop-opacity=".7"/><stop offset="1" stop-color="#20e5d8" stop-opacity="0"/></linearGradient>
-          <radialGradient id="hero-node"><stop stop-color="#e5fffb"/><stop offset=".18" stop-color="#6dfff1" stop-opacity=".9"/><stop offset="1" stop-color="#0be7db" stop-opacity="0"/></radialGradient>
-          <clipPath id="hero-world">
-            <path d="M169 120l25-12 25 4 20-10 22 4 13 13-7 14-22 4-6 14-18 5-8 18-16-7-9-16-17-3-8-15zm58 61 17 2 13 15 17 8-2 20-12 13-2 24-13 17-8-18-4-19-13-15 4-23zm87-58 19-9 17 5 11-10 15 7-5 12-15 3-5 14-20-2-11 13-13-12zm17 42 22-11 19 5 13 16-6 22-17 13-6 26-16-15-2-20-15-15zm65-48 27-10 26 6 20-8 28 12 28-1 14 16-15 14-26 1-15 11-21-6-14 12-18-12-17 2-9-14zm85 63 18-6 14 12-8 13-18 2-11-11z"/>
-          </clipPath>
-        </defs>
-        <g clip-path="url(#hero-world)" opacity=".48"><rect x="155" y="95" width="410" height="195" fill="url(#hero-map-dots)"/></g>
-        <path d="M-30 75C145 20 335 28 479 91S724 120 882 139 1050 213 1080 295" fill="none" stroke="url(#hero-route)" stroke-width="1.2"/>
-        <path d="M316 292C411 188 484 94 630 116S841 180 1014 326" fill="none" stroke="url(#hero-route)" stroke-width="1.1" opacity=".9"/>
-        <path d="M-30 322C172 267 304 279 449 253" fill="none" stroke="#1cd7d7" stroke-width=".55" opacity=".24"/>
-        <g><circle cx="125" cy="49" r="18" fill="url(#hero-node)"/><circle cx="283" cy="45" r="16" fill="url(#hero-node)"/><circle cx="479" cy="91" r="20" fill="url(#hero-node)"/><circle cx="630" cy="116" r="20" fill="url(#hero-node)"/><circle cx="882" cy="139" r="16" fill="url(#hero-node)"/></g>
-        <g fill="#cffffb"><circle cx="125" cy="49" r="2"/><circle cx="283" cy="45" r="2"/><circle cx="479" cy="91" r="2.3"/><circle cx="630" cy="116" r="2.2"/><circle cx="882" cy="139" r="2"/></g>
-      </svg>
+    <section class="hero hero-image-test" aria-labelledby="hero-title">
+      <img class="hero-art" src="public/assets/hero/home-hero-schiecchi-clean.png" alt="Pá-carregadeira, guindaste sobre esteiras e colhedora de café sob um mapa-múndi tecnológico pontilhado." width="1671" height="941" fetchpriority="high">
       <div class="shell hero-content">
         <p class="hero-eyebrow">SOLUÇÕES EM TECNOLOGIA PARA MÁQUINAS E EQUIPAMENTOS</p>
-        <h1 id="hero-title">TECNOLOGIA QUE<br><em>TRABALHA COM VOCÊ.</em></h1>
+        <h1 id="hero-title">TECNOLOGIA QUE<br><em>TRABALHA COM<br>VOCÊ.</em></h1>
         <p class="hero-copy">Simplificar. Diagnosticar. Agilizar.</p>
         <a class="solid-button" href="#sobre">CONHEÇA A SCHIECCHI <span aria-hidden="true">→</span></a>
       </div>
@@ -107,17 +92,18 @@
       <div class="shell">
         <p class="section-kicker"><span></span>NOSSAS TECNOLOGIAS</p>
         <h2 id="technologies-title">TECNOLOGIAS PARA DIFERENTES NECESSIDADES.</h2>
-        <div class="technology-grid">
-          <article class="technology-card gateway-card">
-            <div class="card-content"><h3>SCHIECCHI<br><em>GATEWAY</em></h3><p>Diagnóstico eletrônico remoto<br>para máquinas e equipamentos.</p><a href="gateway/" data-interest="SCHIECCHI GATEWAY">Conhecer Gateway <span aria-hidden="true">→</span></a></div>
+        <div class="technology-grid solution-grid">
+          <article class="technology-card gateway-card solution-card">
+            <div class="solution-media"><img src="public/assets/produtos/gateway/gateway-home.png" alt="Equipamento SCHIECCHI GATEWAY com conector" width="1536" height="1024" loading="lazy"></div>
+            <div class="card-content"><h3>SCHIECCHI<br><em>GATEWAY</em></h3><p class="solution-tagline">DIAGNÓSTICO SEM FRONTEIRAS.</p><p class="solution-description">Conectividade para acesso remoto aos sistemas eletrônicos da máquina, permitindo que a equipe SCHIECCHI utilize seus recursos de diagnóstico e análise sem a necessidade de estar fisicamente junto ao equipamento.</p><a href="gateway/" data-interest="SCHIECCHI GATEWAY">CONHEÇA O GATEWAY <span aria-hidden="true">→</span></a></div>
           </article>
-          <article class="technology-card wind-card">
-            <div class="card-content"><h3>AXIS<br><em>WIND</em></h3><p>Monitoramento inteligente<br>do vento.</p><a href="axis-wind/" data-interest="AXIS WIND">Conhecer AXIS WIND <span aria-hidden="true">→</span></a></div>
-            <span class="concept-label">Imagem conceitual</span>
+          <article class="technology-card solution-card cranes-card">
+            <div class="solution-media"><img class="solution-display" src="public/assets/guindastes/monitoramento-guindaste-display-10-1-sem-fundo.png" alt="Display oficial de 10,1 polegadas do sistema de monitoramento de guindastes SCHIECCHI" width="1630" height="965" loading="lazy"></div>
+            <div class="card-content"><h3>MONITORAMENTO<br><em>DE GUINDASTES</em></h3><p class="solution-tagline">INFORMAÇÃO E CONTROLE EM TEMPO REAL.</p><p class="solution-description">Sistema desenvolvido para reunir os principais parâmetros da operação em uma única interface, com monitoramento em tempo real em display touch de 10,1&quot;.</p><a href="guindastes/" data-interest="MONITORAMENTO DE GUINDASTES">CONHEÇA O SISTEMA <span aria-hidden="true">→</span></a></div>
           </article>
-          <article class="technology-card level-card">
-            <div class="card-content"><h3>AXIS<br><em>LEVEL</em></h3><p>Nivelamento digital<br>de máquinas e equipamentos.</p><a href="#contato" data-interest="AXIS LEVEL" data-future-path="/axis-level/">Conhecer AXIS LEVEL <span aria-hidden="true">→</span></a></div>
-            <span class="concept-label">Imagem conceitual</span>
+          <article class="technology-card solution-card coffee-card">
+            <div class="solution-media"><img class="solution-display" src="public/assets/cafe/schiecchi-plus-painel-controle-tdi.png" alt="Display touch de 10,1 polegadas do SCHIECCHI PLUS em colhedora de café TDI" width="1672" height="941" loading="lazy"></div>
+            <div class="card-content"><h3>MONITORAMENTO E CONTROLE<br><em>DE COLHEDORAS DE CAFÉ</em></h3><p class="solution-tagline">TECNOLOGIA PARA ACOMPANHAR E CONTROLAR A OPERAÇÃO.</p><p class="solution-description">Soluções SCHIECCHI para monitoramento, conectividade e controle de colhedoras de café, com opções PLUS e ESSENCIAL para diferentes necessidades da operação.</p><a href="cafe/" data-interest="MONITORAMENTO E CONTROLE DE COLHEDORAS DE CAFÉ">CONHEÇA AS SOLUÇÕES <span aria-hidden="true">→</span></a></div>
           </article>
         </div>
       </div>

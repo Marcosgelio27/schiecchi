@@ -153,3 +153,25 @@
 @media(max-width:760px){.product-intro,.product-showcase,.feature-columns,.compare-grid,.field-heading,.field-gallery{grid-template-columns:1fr}.product-gallery,.essential-gallery{grid-template-columns:1fr}.product-gallery .gallery-detail,.field-gallery-detail{max-width:70%}.capability-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.other-card:first-child{grid-template-columns:1fr}.other-card figure{max-width:540px}.product-showcase{padding:18px}.product-facts{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:20px}}
 @media(max-width:540px){.product-section{padding:46px 0}.product-section h2{font-size:clamp(1.85rem,8vw,2.5rem)}.product-intro{gap:18px;margin-bottom:22px}.product-intro>p{font-size:.94rem}.product-showcase{padding:12px}.product-facts{grid-template-columns:1fr}.product-facts li{padding-block:11px;font-size:.85rem}.product-facts li:before{top:20px}.capability-grid{grid-template-columns:1fr}.capability-grid article{min-height:0;padding:22px}.other-card{padding:20px}.product-gallery{gap:12px;margin:24px 0 30px}.product-gallery figure{padding:8px}.product-gallery .gallery-detail{max-width:100%}.feature-columns{gap:12px}.feature-columns>div{padding:20px}.compare-grid article{padding:22px}.compare-grid .feature-list{grid-template-columns:1fr}.coffee-page .solution-hero h1,.crane-page .solution-hero h1{font-size:clamp(2rem,8vw,3rem)}}
 @media(max-width:540px){.field-heading>div:last-child p{font-size:.91rem}.field-gallery{gap:12px;margin:24px 0 18px}.field-gallery figure{padding:8px}.field-gallery-detail{max-width:100%}.field-gallery figcaption{font-size:.63rem}}
+
+/* Apresentação final dos dois sistemas para guindastes. */
+.crane-page .solution-hero-media img,.crane-page .product-showcase img{clip-path:none}
+.crane-page .product-showcase>div{min-width:0}
+.crane-page .product-showcase .product-overline{margin-bottom:8px}
+.crane-limit-note{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);align-items:center;gap:24px;margin-top:15px;padding:19px 24px;border-left:2px solid var(--teal);background:#0a2425}
+.crane-limit-note h3{margin:0;font-size:1rem;letter-spacing:.03em}
+.crane-limit-note p{margin:0;color:#c9dcda;font-size:.9rem;line-height:1.5}
+.crane-anemometer{background:#06171b}
+.crane-anemometer .product-intro{align-items:center}
+.crane-anemometer .product-overline{margin-bottom:8px}
+.anemometer-intro{margin:0;color:#c9dcda;font-size:1.06rem;line-height:1.6}
+.anemometer-layout{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);align-items:center;gap:clamp(24px,4vw,58px);padding:24px;border:1px solid #226359;border-radius:12px;background:radial-gradient(ellipse at 30% 42%,#0c444244,transparent 65%),#061c20}
+.anemometer-layout figure{min-width:0;margin:0}
+.anemometer-layout img{display:block;width:100%;height:auto;object-fit:contain}
+.anemometer-layout figcaption{margin-top:11px;color:#a7c8c0;font-size:.68rem;font-weight:800;letter-spacing:.12em}
+.anemometer-configurations{display:grid;gap:22px;align-content:center}
+.anemometer-configurations article{padding-left:17px;border-left:2px solid var(--teal)}
+.anemometer-configurations h3{margin:0 0 8px;font-size:1rem}
+.anemometer-configurations p{margin:0;color:#c9dcda;font-size:.92rem;line-height:1.55}
+@media(max-width:900px){.anemometer-layout{grid-template-columns:1fr}.anemometer-layout figure{max-width:720px;margin-inline:auto}.anemometer-configurations{grid-template-columns:repeat(2,minmax(0,1fr))}.anemometer-configurations .text-link{grid-column:1/-1}}
+@media(max-width:600px){.crane-limit-note{grid-template-columns:1fr;gap:8px;padding:16px}.crane-anemometer .product-intro{grid-template-columns:1fr}.anemometer-layout{padding:13px}.anemometer-configurations{grid-template-columns:1fr;gap:19px}.anemometer-configurations .text-link{grid-column:auto}.anemometer-intro{font-size:.94rem}}

@@ -26,7 +26,7 @@ em{font-style:normal;color:var(--teal)}
 .section-kicker{display:flex;align-items:center;gap:11px;margin:0 0 12px;color:#e7f1f2;text-transform:uppercase;font-size:.69rem;font-weight:800;letter-spacing:.25em}
 .section-kicker span{display:block;flex:none;width:25px;height:4px;border-radius:2px;background:var(--teal);box-shadow:0 0 8px #13d9aa70}
 
-.hero{height:clamp(445px,43.5vw,590px);position:relative;overflow:hidden;background:#0b2030 url("public/assets/hero/home-hero-clean.png") center/cover no-repeat}
+.hero{height:clamp(445px,43.5vw,590px);position:relative;overflow:hidden;background:#07131c}
 .hero-tech{position:absolute;inset:0;z-index:1;width:100%;height:100%;pointer-events:none}
 .hero-content{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;padding-top:133px;padding-left:7px}
 .hero-eyebrow{margin:0 0 17px;color:#5df2d8;text-transform:uppercase;font-size:.76rem;font-weight:800;letter-spacing:.15em;white-space:nowrap}
@@ -188,3 +188,33 @@ dialog>p:not(.section-kicker){color:#c6d9d9;line-height:1.5}
   .whatsapp-float{right:16px;bottom:calc(16px + env(safe-area-inset-bottom));width:52px;height:52px}.whatsapp-float svg{width:28px;height:28px}
 }
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}.header-cta,.solid-button,.technology-card{transition:none}}
+
+/* As três soluções principais da SCHIECCHI. */
+.solution-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:stretch}
+.solution-grid .solution-card{display:flex;flex-direction:column;align-items:stretch;grid-column:auto;min-width:0;min-height:462px;background:#061820;border-color:#28616a}
+.solution-grid .solution-card:before{display:none}
+.solution-grid .gateway-card{background-image:none}
+.solution-grid .solution-media{display:grid;place-items:center;flex:none;height:250px;padding:10px 12px 0;background:radial-gradient(ellipse at 50% 38%,#14554b47,transparent 66%)}
+.solution-grid .solution-media img{display:block;max-width:100%;height:auto;object-fit:contain;filter:none}
+.solution-grid .gateway-card .solution-media img{width:100%;height:100%}
+.solution-grid .solution-media .solution-display{width:min(100%,397px);max-height:100%;height:auto;object-fit:contain}
+.solution-grid .cranes-card .solution-display{clip-path:none}
+.solution-grid .solution-card .card-content{z-index:2;display:flex;flex:1;flex-direction:column;padding:15px 20px 20px}
+.solution-grid .solution-card h3{font-family:Bahnschrift,"Arial Narrow",Arial,sans-serif;font-size:clamp(1.7rem,1.95vw,2.1rem);line-height:1.03}
+.solution-grid .coffee-card h3{font-size:clamp(1.55rem,1.78vw,1.95rem)}
+.solution-grid .solution-card .solution-tagline{max-width:38ch;margin:13px 0 10px;color:var(--teal);font-size:.78rem;font-weight:800;letter-spacing:.045em;line-height:1.35}
+.solution-grid .solution-card .solution-description{max-width:46ch;margin:0 0 20px;color:#c6d8db;font-size:.83rem;font-weight:400;letter-spacing:0;line-height:1.5}
+.solution-grid .solution-card a{align-self:flex-start;min-height:38px;margin-top:auto}
+@media(max-width:1000px){.solution-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.solution-grid .solution-card{min-height:455px}}
+@media(max-width:650px){.solution-grid{grid-template-columns:1fr;gap:12px}.solution-grid .solution-card{min-height:0}.solution-grid .solution-media{height:220px;padding-top:9px}.solution-grid .solution-media .solution-display{width:min(100%,350px)}.solution-grid .gateway-card .solution-media img{max-width:350px}.solution-grid .solution-card .card-content{min-height:170px;padding:14px 19px 19px}.solution-grid .solution-card h3,.solution-grid .coffee-card h3{font-size:clamp(1.62rem,6vw,1.95rem)}.solution-grid .solution-card p{font-size:.74rem}.solution-grid .solution-card a{min-height:42px}}
+
+/* Teste local da arte oficial na Hero: a imagem inteira permanece visível. */
+.hero.hero-image-test{height:auto;min-height:0;padding-top:100px;background:#07131c;overflow:visible}
+.hero.hero-image-test:before{display:none}
+.hero-image-test .hero-art{display:block;width:100%;height:auto;object-fit:contain}
+.hero-image-test .hero-content{height:auto;padding-top:38px;padding-bottom:45px}
+.hero-image-test .hero-eyebrow{white-space:normal}
+.hero-visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:850px){.hero.hero-image-test{padding-top:75px}}
+@media(max-width:850px){.hero-image-test .hero-content{padding-top:30px;padding-bottom:38px}}
+@media(max-width:650px){.hero-image-test h1{font-size:clamp(1.65rem,7.1vw,2.4rem)}.hero-image-test .hero-copy{font-size:clamp(1rem,4.5vw,1.35rem)}}
