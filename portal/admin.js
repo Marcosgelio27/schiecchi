@@ -35,7 +35,9 @@ if (account) {
   }
 
   function row(label, detail, type, id) {
-    return `<div class="record-row"><div><strong>${safe(label)}</strong><small>${safe(detail)}</small></div><button type="button" data-edit="${type}" data-id="${safe(id)}">EDITAR</button></div>`;
+    const actions = `<button type="button" data-edit="${type}" data-id="${safe(id)}">EDITAR</button>` +
+      (["client", "machine"].includes(type) ? `<button type="button" data-delete="${type}" data-id="${safe(id)}" aria-label="Excluir ${type === "client" ? "cliente" : "máquina"} ${safe(label)}">EXCLUIR</button>` : "");
+    return `<div class="record-row"><div><strong>${safe(label)}</strong><small>${safe(detail)}</small></div><div class="record-actions">${actions}</div></div>`;
   }
 
   function render() {
@@ -60,7 +62,45 @@ if (account) {
       : '<p class="empty-state">Nenhum dispositivo cadastrado.</p>';
   }
 
-  document.querySelector(".portal-main").addEventListener("click", event => {
+  document.querySelector(".portal-main").addEventListener("click", async event => {
+    const remove = event.target.closest("[data-delete]");
+    if (remove) {
+      const report = (text, kind) => {
+        message(notice, text, kind);
+        notice.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      };
+      const type = remove.dataset.delete;
+      const table = type === "client" ? "clients" : "machines";
+      const record = state[table].find(item => item.id === remove.dataset.id);
+      if (!record) return;
+      if (type === "client" && state.machines.some(item => item.client_id === record.id)) {
+        report("Este cliente possui máquinas vinculadas. Exclua ou transfira as máquinas antes de excluir o cliente.");
+        return;
+      }
+      if (type === "client" && state.users.some(item => item.client_id === record.id)) {
+        report("Este cliente possui usuários vinculados. Transfira os usuários antes de excluir o cliente.");
+        return;
+      }
+      if (type === "machine" && state.devices.some(item => item.machine_id === record.id)) {
+        report("Esta máquina possui um dispositivo vinculado. Desvincule o dispositivo antes de excluir a máquina.");
+        return;
+      }
+      const label = type === "client" ? record.legal_name : record.identifier;
+      if (!window.confirm(`Excluir permanentemente ${type === "client" ? "o cliente" : "a máquina"} “${label}”? Esta ação não pode ser desfeita.`)) return;
+      remove.disabled = true;
+      notice.hidden = true;
+      try {
+        const { data, error } = await client.from(table).delete().eq("id", record.id).select("id");
+        if (error?.code === "23503") throw new Error("O registro ainda possui vínculos no banco. Desvincule-os antes de excluir.");
+        if (error) throw error;
+        if (!data?.length) throw new Error("O registro não foi excluído. Atualize a página e confira suas permissões.");
+        await load();
+        report(type === "client" ? "Cliente excluído." : "Máquina excluída.", "info");
+      } catch (error) {
+        report(error.message || "Não foi possível excluir o registro.");
+      } finally { remove.disabled = false; }
+      return;
+    }
     const edit = event.target.closest("[data-edit]");
     if (!edit) return;
     const table = { client: "clients", user: "users", machine: "machines", device: "devices" }[edit.dataset.edit];
